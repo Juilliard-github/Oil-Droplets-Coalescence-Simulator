@@ -26,7 +26,9 @@ The user interface allows you to change key parameters of the simulation in real
 ## Cahn-Hilliard Equation
 The governing equation for your simulation is:
 
-``` $\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$ ```
+\begin{equation}
+### $\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$
+\end{equation}
 
 **$\phi$:** The phase field, representing oil concentration (from 0 to 1).
 
