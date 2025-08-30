@@ -26,7 +26,7 @@ The user interface allows you to change key parameters of the simulation in real
 ## Cahn-Hilliard Equation
 The governing equation for your simulation is:
 
-### $\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$
+``` $\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$ ```
 
 **$\phi$:** The phase field, representing oil concentration (from 0 to 1).
 
@@ -44,6 +44,6 @@ The governing equation for your simulation is:
 ## Double-Well Potential Derivative
 The derivative term $\frac{\partial f}{\partial \phi}$ from the main equation is given by:
 
-### $\frac{\partial f}{\partial \phi} = 4\phi(\phi - 1)(\phi - 0.5)$
+``` $\frac{\partial f}{\partial \phi} = 4\phi(\phi - 1)(\phi - 0.5)$ ```
 
 This function has roots at $\phi = 0$, $\phi = 0.5$, and $\phi = 1$, which define the stable (0 and 1) and unstable (0.5) states of the system.
