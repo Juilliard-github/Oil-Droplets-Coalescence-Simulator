@@ -14,7 +14,7 @@ This is the most crucial force for droplet coalescence. It's modeled using a **n
 ## The Cahn-Hilliard Equation
 The two forces—diffusion and surface tension—are combined in the Cahn-Hilliard equation, which is implemented in the simulation's code as:
 
-**<center>$$\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$$ </center>**
+**<p style="text-align: center;">$$\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$$ </p>**
 
 $\phi$: The **phase field**, representing oil concentration (from 0 to 1).
 
