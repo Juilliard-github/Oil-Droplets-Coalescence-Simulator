@@ -16,10 +16,10 @@ The two forces—diffusion and surface tension—are combined in the Cahn-Hillia
 
 **<p style="text-align: center;">$$\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$$</p>**
 
-<ul>
-<ol>$\phi$: The **phase field**, representing oil concentration (from 0 to 1).</ol>
 
-<ol>$\frac{\partial \phi}{\partial t}$: The rate of change of $\phi$ over time.</ol>
+- $\phi$: The **phase field**, representing oil concentration (from 0 to 1).
+
+- $\frac{\partial \phi}{\partial t}$: The rate of change of $\phi$ over time.
 
 $M$: The **mobility** constant, controlling the diffusion rate.
 
