@@ -13,27 +13,37 @@ This is the most crucial force for droplet coalescence. It's modeled using a non
 
 ## Controls
 The user interface allows you to change key parameters of the simulation in real-time.
+
 **Initial Drops:** Sets the number of oil droplets that appear at the beginning of the simulation.
+
 **Drop Radius:** Controls the size of the droplets when they are created.
+
 **Simulation Speed:** Adjusts the M (Mobility) parameter in the physics equation, changing how quickly the droplets diffuse and merge.
+
 **Interface Sharpness:** Modifies the K (Surface Energy Coefficient) parameter, which controls the width of the boundary between the oil and water, making the edges appear softer or sharper.
 
 
 ## Cahn-Hilliard Equation
 The governing equation for your simulation is:
-<br>
-$\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$
+
+### $\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$
 
 **$\phi$:** The phase field, representing oil concentration (from 0 to 1).
+
 **$\frac{\partial \phi}{\partial t}$:** The rate of change of $\phi$ over time.
+
 **$M$:** The mobility constant, controlling the diffusion rate.
+
 **$\nabla^2$:** The Laplacian operator, which models diffusion.
+
 **$K$:** The surface energy constant, controlling the interface sharpness.
+
 **$\frac{\partial f}{\partial \phi}$:** The derivative of the double-well free energy function, representing the surface tension force.
+
 
 ## Double-Well Potential Derivative
 The derivative term $\frac{\partial f}{\partial \phi}$ from the main equation is given by:
-<br>
-$\frac{\partial f}{\partial \phi} = 4\phi(\phi - 1)(\phi - 0.5)$
+
+### $\frac{\partial f}{\partial \phi} = 4\phi(\phi - 1)(\phi - 0.5)$
 
 This function has roots at $\phi = 0$, $\phi = 0.5$, and $\phi = 1$, which define the stable (0 and 1) and unstable (0.5) states of the system.
