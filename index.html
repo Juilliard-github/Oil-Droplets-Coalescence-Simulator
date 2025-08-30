@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Coalescence Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Oil Droplets Coalescence Simulator</h1>
+        <div class="content-wrapper">
+            <div class="controls-panel">
+                <div class="control-row">
+                    <label for="numDrops">Initial Drops</label>
+                    <input type="number" id="numDrops" value="20" min="0" max="500">
+                </div>
+                <div class="control-row">
+                    <label for="dropRadius">Drop Radius</label>
+                    <input type="number" id="dropRadius" value="5" min="1" max="20">
+                </div>
+                <div class="control-row">
+                    <label for="simSpeed">Simulation Speed</label>
+                    <input type="range" id="simSpeed" min="1" max="100" value="50">
+                </div>
+                <div class="button-group">
+                    <button id="restartBtn" class="button">Restart</button>
+                    <button id="addOilBtn" class="button button--primary">Add Oil</button>
+                    <button id="clearAllBtn" class="button button--secondary">Clear All</button>
+                </div>
+            </div>
+            <div class="canvas-container">
+                <canvas id="simulationCanvas"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
