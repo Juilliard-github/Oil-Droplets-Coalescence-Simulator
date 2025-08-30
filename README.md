@@ -5,12 +5,11 @@ This is a web-based physics simulation that models the fascinating process of oi
 The simulation runs on a 100x100 grid, where each point represents the local concentration of oil, also known as the **phase field ($ϕ$).** The value of $ϕ$ ranges from 0 (pure water) to 1 (pure oil).
 The core of the simulation is a continuous calculation that updates the phase field at every frame. This calculation is driven by two primary physical forces:
 
-<ol>
-  <li>Diffusion</li>
-  This force represents the natural tendency for a substance to spread from areas of high concentration to low concentration. It's calculated using the **Laplacian operator ($$∇^2$$)**, which measures the difference between a point's value and the average of its neighbors. This is what causes the droplets to spread and interact with each other.
-  <li>Surface Tension</li>
-  This is the most crucial force for droplet coalescence. It's modeled using a **non-linear term** that acts like a repulsive force, pushing the phase field values toward either 0 or 1. This force not only creates the sharp boundary between oil and water but also drives the droplets to merge. By doing so, the system's total surface area is minimized, a fundamental principle of surface tension in fluids.
-</ol>
+### 1. Diffusion
+This force represents the natural tendency for a substance to spread from areas of high concentration to low concentration. It's calculated using the **Laplacian operator ($$∇^2$$)**, which measures the difference between a point's value and the average of its neighbors. This is what causes the droplets to spread and interact with each other.
+
+### 2. Surface Tension
+This is the most crucial force for droplet coalescence. It's modeled using a **non-linear term** that acts like a repulsive force, pushing the phase field values toward either 0 or 1. This force not only creates the sharp boundary between oil and water but also drives the droplets to merge. By doing so, the system's total surface area is minimized, a fundamental principle of surface tension in fluids.
 
 ## The Cahn-Hilliard Equation
 The two forces—diffusion and surface tension—are combined in the Cahn-Hilliard equation, which is implemented in the simulation's code as:
@@ -18,9 +17,9 @@ The two forces—diffusion and surface tension—are combined in the Cahn-Hillia
 **<p style="text-align: center;">$$\frac{\partial \phi}{\partial t} = M \nabla^2 \phi - K \frac{\partial f}{\partial \phi}$$</p>**
 
 <ul>
-<ol>$\phi$:</ol> The **phase field**, representing oil concentration (from 0 to 1).
+<ol>$\phi$: The **phase field**, representing oil concentration (from 0 to 1).</ol>
 
-$\frac{\partial \phi}{\partial t}$: The rate of change of $\phi$ over time.
+<ol>$\frac{\partial \phi}{\partial t}$: The rate of change of $\phi$ over time.</ol>
 
 $M$: The **mobility** constant, controlling the diffusion rate.
 
