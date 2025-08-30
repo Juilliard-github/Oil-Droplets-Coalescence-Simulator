@@ -28,7 +28,7 @@ $K$: The **surface energy** constant, controlling the interface sharpness.
 
 $\frac{\partial f}{\partial \phi}$: The derivative of the double-well free energy function, representing the **surface tension** force. This term is defined by the following **double-well potential derivative:**
 
-### $$\frac{\partial f}{\partial \phi} = 4\phi(\phi - 1)(\phi - 0.5)$$
+## <center>$$\frac{\partial f}{\partial \phi} = 4\phi(\phi - 1)(\phi - 0.5)$$
 
 This function has roots at $\phi = 0$, $\phi = 0.5$, and $\phi = 1$, which define the stable (0 and 1) and unstable (0.5) states of the system.
 
