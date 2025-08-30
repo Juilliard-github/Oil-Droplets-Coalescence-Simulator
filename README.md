@@ -21,26 +21,25 @@ The two forces—diffusion and surface tension—are combined in the Cahn-Hillia
 
 - $\frac{\partial \phi}{\partial t}$: The rate of change of $\phi$ over time.
 
-$M$: The **mobility** constant, controlling the diffusion rate.
+- $M$: The **mobility** constant, controlling the diffusion rate.
 
-$\nabla^2$: The **Laplacian operator**, which models diffusion.
+- $\nabla^2$: The **Laplacian operator**, which models diffusion.
 
-$K$: The **surface energy** constant, controlling the interface sharpness.
+- $K$: The **surface energy** constant, controlling the interface sharpness.
 
-$\frac{\partial f}{\partial \phi}$: The derivative of the double-well free energy function, representing the **surface tension** force. This term is defined by the following **double-well potential derivative:**
+- $\frac{\partial f}{\partial \phi}$: The derivative of the double-well free energy function, representing the **surface tension** force. This term is defined by the following **double-well potential derivative:**
 
 **<p style="text-align: center;">$$\frac{\partial f}{\partial \phi} = 4\phi(\phi - 1)(\phi - 0.5)$$</p>**
 
 This function has roots at $\phi = 0$, $\phi = 0.5$, and $\phi = 1$, which define the stable (0 and 1) and unstable (0.5) states of the system.  
-</ul>
 
 ## User Controls
 The user interface allows you to change key parameters of the simulation in real-time.
 
-**Initial Drops:** Sets the number of oil droplets that appear at the beginning of the simulation.
+- **Initial Drops:** Sets the number of oil droplets that appear at the beginning of the simulation.
 
-**Drop Radius:** Controls the size of the droplets when they are created.
+- **Drop Radius:** Controls the size of the droplets when they are created.
 
-**Simulation Speed:** Adjusts the M (Mobility) parameter in the physics equation, changing how quickly the droplets diffuse and merge.
+- **Simulation Speed:** Adjusts the M (Mobility) parameter in the physics equation, changing how quickly the droplets diffuse and merge.
 
-**Interface Sharpness:** Modifies the K (Surface Energy Coefficient) parameter, which controls the width of the boundary between the oil and water, making the edges appear softer or sharper.
+- **Interface Sharpness:** Modifies the K (Surface Energy Coefficient) parameter, which controls the width of the boundary between the oil and water, making the edges appear softer or sharper.
